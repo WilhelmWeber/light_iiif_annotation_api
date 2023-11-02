@@ -7,6 +7,7 @@ export interface manifestDoc extends Document {
     license: String,
     contributor: String,
     manifest_uri: String,
+    userID: String,
 };
 
 const manifestSchema: Schema = new Schema(
@@ -32,6 +33,10 @@ const manifestSchema: Schema = new Schema(
             required: true,
         },
         manifest_uri: {
+            type: String,
+            required: true,
+        },
+        userID : {
             type: String,
             required: true,
         },

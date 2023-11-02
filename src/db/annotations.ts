@@ -6,6 +6,8 @@ export interface annotationDoc extends Document {
     annotation_id: String,
     chars: String,
     on: String,
+    imageURI: String,
+    userID: String,
 }
 
 const annotationSchema: Schema = new Schema(
@@ -27,6 +29,14 @@ const annotationSchema: Schema = new Schema(
             required: true,
         },
         on: {
+            type: String,
+            required: true,
+        },
+        imageURI : {
+            type: String,
+            required: true,
+        },
+        userID: {
             type: String,
             required: true,
         },
