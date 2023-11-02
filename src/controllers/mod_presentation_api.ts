@@ -3,6 +3,7 @@
 import express, { Router } from "express";
 import manifests from "../db/manifests";
 import annotations from "../db/annotations";
+import 'cross-fetch/polyfill';
 
 const router: express.Router = Router();
 
