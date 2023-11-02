@@ -2,8 +2,10 @@
   "name": "annotation_api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/manage.js",
   "scripts": {
+    "build": "npm install && tsc",
+    "start": "node src/manage.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
